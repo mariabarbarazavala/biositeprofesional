@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -26,8 +26,8 @@
 
     .cover {
       width: 100%;
-      background-color: #000000;
       height: 300px;
+      background-color: #000000;
       position: relative;
     }
 
@@ -38,11 +38,11 @@
       object-fit: cover;
       object-position: top;
       border: 5px solid #000000;
-      background-color: #fff;
+      background-color: #000;
       position: absolute;
       left: 50%;
-      bottom: -80px;
-      transform: translateX(-50%);
+      top: 100%;
+      transform: translate(-50%, -50%);
       z-index: 5;
     }
 
@@ -52,30 +52,30 @@
       flex-direction: column;
       align-items: center;
       padding: 0 15px;
-      text-align: justify;
+      text-align: justify; /* Justifica todo el contenido dentro de info */
     }
 
     .title {
       font-size: 22px;
       color: #000000;
-      margin: -13px 0 0;
+      margin: -20px 0 0;
       text-align: center;
     }
 
     .subtitle {
-      font-size: 12px;
+      font-size: 7px;
       color: #000000;
       font-style: italic;
       margin: 5px 0 10px;
-      text-align: justify;
+      text-align: justify; /* Justifica subtítulos */
     }
 
     .small-text {
-      font-size: 11px;
+      font-size: 8px;
       color: #000000;
       margin-bottom: 15px;
       max-width: 400px;
-      text-align: justify;
+      text-align: justify; /* Justifica este bloque también */
     }
 
     .buttons {
@@ -103,7 +103,32 @@
 
     .button-link:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 16px #000000aa;
+      box-shadow: 0 0 16px #ff00ff;
+    }
+
+    @media (max-width: 480px) {
+      .cover {
+        height: 220px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        top: 100%;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .subtitle,
+      .small-text {
+        font-size: 10px;
+      }
+
+      .button-link {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
@@ -119,16 +144,15 @@
 
     <div class="info">
       <h1 class="title">María Barbara Zavala</h1>
-      <h2 class="subtitle">Mi blog en conocimiento</h2>
-      <h3 class="subtitle">Mis colecciones en aprendizaje</h3>
-      <h4 class="subtitle">Filosofía, psicología, ciencias de la mente, conocimiento, mentalidad, sabiduría, esoterismo, misticismo, ocultismo, espiritualidad, artes ocultas, creencias y religión.</h4>
+      <h2 class="subtitle">Mi blog en conocimiento profesional</h2>
+      <h3 class="subtitle">Temas, noticias, tendencias, estudio, análisis, disciplinas, ramas, ciencias de: Administración, finanzas, contabilidad, negocios, empresas, gestión empresarial, liderazgo, filosofía, psicología organizacional, mentalidad, emprendimiento, innovación, tecnología, productividad, ciencias sociales, ciencias políticas, ciencias administrativas, ciencias empresariales, ciencias corporativas, ciencias organizacionales, ciencias de la gestión, ciencias financieras, ciencias contables, ciencias monetarias en el sector público, privado, laboral, empresarial, profesional, social, económico, financiero, humano.</h3>
       <div class="small-text">
-        Listas de temas, temarios completos, información, investigación, educación, análisis, criterio, estudio, frases, citas, escritos, pensamientos, fragmentos, meditaciones, reflexiones, enciclopedias, artículos, libros. 
+        Listas de temas, temarios completos, información, investigación, educación, análisis, criterio, estudio, frases, citas, escritos, pensamientos, fragmentos, meditaciones, reflexiones, enciclopedias, artículos, libros.
       </div>
     </div>
 
     <div class="buttons">
-      <a class="button-link" href="https://drive.google.com/drive/folders/15TqZEexh4nhsfJy3OJYPi_Er7ZQcxBPx" target="_blank">Blog de conocimiento</a>
+      <a class="button-link" href="https://drive.google.com/drive/folders/15P-FtRh19ZeUZcfSo_rkHxvCPrlb_F1O" target="_blank">Blog profesional</a>
     </div>
   </div>
 </body>
